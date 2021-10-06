@@ -1,1 +1,1 @@
-Hosted at 
+Hosted at somethingsmart.netlify.app
