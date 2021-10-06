@@ -1,2 +1,3 @@
-Hosted at somethingsmart.netlify.app
+Hosted at https://somethingsmart.netlify.app
+.
 Technologies used are ReactJS , react-scroll , CSS
