@@ -1,38 +1,639 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #012c3d;
+  font-family: 'Roboto Slabcd';
+}
+
+nav 
+{
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  background-color: #f8444f;
+}
+
+.logo
+{
+  font-size: 3.8rem;
+  padding: 0 2vw;
+  color: #ffffff;
+}
+
+nav ul 
+{
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+nav li 
+{
+  list-style-type: none;
+  padding: 1.5vh 2vw;
+  margin-top: 2.5vh;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+nav li:hover
+{
+  background-color: white;
+  color:#f8444f ;
+}
+
+
+.mobile
+{
+  display: none;
+}
+
+.mobile button
+{
+  margin: 2vh 3vw;
+  height: 3vh;
+  width: 4vw;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.5rem; 
+}
+
+.fas
+{ 
+ color: #ffffff;
+}
+
+
+.hidden
+{
+  display: none;
+}
+
+.mobile-nav
+{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-color: #f8444f;
+  z-index: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mobile-nav ul 
+{
+  padding-top: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mobile-nav li 
+{
+     font-size: 2rem;
+     padding-top: 1rem;
+     color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mobile-nav button
+{
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 2rem;
+  position: absolute;
+  right: 4%;
+  top:2%;
+}
+
+
+
+/* ----------------------------------------------*/
+
+.Contain
+{
+  height: 88vh;
   display: flex;
   flex-direction: column;
+  background-image: url('./Images/wave.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #f8444f;
+}
+
+
+.text3
+{
+  padding: 30vh 5vh;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.download-buttons {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0;
+  top: 50%;
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 10px;
+}
+
+.download {
+  width: 13rem;
+  height: 10vh;
+  background: #ffffff;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.download:hover
+{
+  border: 1px solid #ffffff;
+  background-color: #f8444f;
+}
+
+.download:hover .fa 
+{
+  color: #ffffff;
+}
+
+.download > .fa
+{
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.dfn
+{
+  display: none;
+}
+
+
+
+
+/* ----------------------------------------------*/
+
+.Section-contain
+{
+  background-image: url('./Images/wave2.svg');
+  background-repeat: no-repeat;
+  background-position-y:101%;
+  height: max-content;
+  padding-bottom: 22vh;
+  background-size: contain;
+}
+  
+
+.Contain1
+{
+   height:60vh;
+   width: 100%;
+   padding: 2vh 8vw;
+   display: flex;
+   justify-content: center;
+  }
+
+.Contain1 img 
+{
+  height: 30rem;
+}  
+
+.text
+{
+    padding:18vw 2rem;
+}
+
+.Title
+{
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+p
+{
+  padding-top: 0.5vw;
+  padding-left: 0.4vw;
+  width: 60%;
+  opacity: 0.8;
+}
+
+
+
+/* ----------------------------------------------*/
+
+.Contain2
+{
+   height:60vh;
+   width: 100%;
+   padding: 2vh 8vw;
+   display: flex;
+   justify-content: center;
+  }
+
+
+.Contain2 img 
+{
+  height: 30rem;
+} 
+
+.text2
+  {
+    padding:18vw 2rem;
+  }
+
+
+.Title2
+{
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.Contain2 p
+{
+  padding-top: 0.5vw;
+  width: 100%;
+}
+
+/* ----------------------------------------------*/
+
+
+.courses-contain
+{
+  height:auto;
+  background-image: url('./Images/wave2.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #f8444f;
+  padding: 5vh 0 5vh 0;
+}
+
+#course-head
+{
+  color: #ffffff;
+  padding-left: 5vw;
+  font-size: 3rem;
+}
+
+.card-contain
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Card 
+{
+  height: 30rem;
+  width: 30rem;
+  margin: 10vh 2vw;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.Card:hover
+{
+  background-color:#f8444f ;
+}
+
+.Card:hover .card-text
+{
+  color: #ffffff;
+}
+
+.Card img 
+{
+  height: 25rem;
+  width: 25rem;
+}
+
+.card-text
+{
+  padding-top: 1vh;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+/* ----------------------------------------------*/
+
+.Contact
+{
+  height: max-content;
+  background-image: url('./Images/wave3.svg');
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 20vw 0 5rem;
+  justify-content: space-around;
+}
+
+.Contact img 
+{
+  height: 40vw;
+}
+
+.contact-contain
+{
+  height: 38rem;
+  width: 30rem;
+  border: 1px solid #012c3d;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+#head
+{
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+input
+{
+  height: 2rem;
+  width: 50%;
+  margin:2rem auto 0 auto;
+  padding-left: 0.5rem;
+  border-radius: 1rem;
+}
+
+textarea
+{
+  width: 50%;
+  height: 10rem;
+  margin:2rem auto 0 auto;
+  padding: 10px 0.5rem;
+  border-radius: 1rem;
+}
+
+.contact-contain button
+{
+  width:10rem;
+  height: 3.5rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  background-color: #f8444f;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* ----------------------------------------------*/
+
+.Footer
+{
+  background-color: #f8444f;
+  height: 20vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer ul 
+{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Footer li 
+{
+  list-style-type: none;
+  padding: 2vh 4vw;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+a , a:visited , a:active
+{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ----------------------------------------------*/
+
+@media (min-width:1300px) {
+
+  .Contain1 
+  {
+    display: flex;
+    justify-content: left;
+    padding-left: 4vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Contain2
+  {
+    display: flex;
+    justify-content: right;
+    padding-right: 4vw;
+  }
+
+  .Card
+  {
+    width: 35rem;
+    height: 30rem;
+  }
+  
+}
+
+
+@media (max-width:1000px) {
+
+  .Contain1 , .Contain2
+  {
+    padding: 2vh 2vw;
+    height: 58vw;
+  }
+  
+  .Contain1 img, .Contain2 img
+  {
+    height: 24rem;
+    margin-top: 10vw;
+  }
+
+  .Title,.Title2
+  {
+    font-size: 3rem;
+  }
+
+  .Contact img 
+  {
+    display: none;
+  }
+  
+}
+
+@media (max-width:800px) {
+
+  .desktop
+  {
+    display: none;
+  }
+
+  .mobile
+  {
+    display:contents;
+  }
+  
+}
+
+@media (max-width:768px) {
+
+  #course-head
+  {
+    font-size: 2rem;
+  }
+
+  nav 
+  {
+    height: 8vh;
+  }
+
+  .logo
+  {
+    font-size: 3rem;
+  }
+
+  .text3
+  {
+    padding: 20% 8vw;
+    font-size: 3rem;
+  }
+
+  .Contain1 , .Contain2
+  {
+    padding: 2vh 1vw;
+  }
+  
+  .Contain1 img, .Contain2 img
+  {
+    height: 45vw;
+    margin-top: 10vw;
+  }
+
+  .text
+  {
+    padding-right: 1vw;
+    padding-left: 3vw;
+  }
+
+  .text p 
+  {
+    width: 80%;
+  }
+
+
+ .text2
+  {
+    padding-left: 3vw;
+  }
+
+  .Title,.Title2
+  {
+    font-size: 7vw;
+  }
+  
+}
+
+@media (max-width:500px) {
+
+  .mobile button 
+  {
+    font-size: 1.2rem;
+  }
+
+
+  .logo
+  {
+    font-size: 8vw;
+  }
+
+  .text3
+  {
+    font-size: 8vw;
+    padding-bottom: 20%;
+  }
+
+  .Contain1 , .Contain2
+  {
+    height: 18rem;
+  }
+  
+  .Contain1 img, .Contain2 img
+  {
+    margin: 2vh 1vw;
+  }
+
+  .text, .text2
+  {
+    padding-top: 4vh;
+    padding-right: 0;
+  }
+
+  .Title , .Title2
+  {
+    font-size: 2rem;
+  }
+
+  .text p ,.text2 p 
+  {
+    font-size: 0.8rem;
+    width: 95%;
+  }
+  
+}
+
+@media (max-width:600px) {
+
+  .Card
+  {
+    height: 100vw;
+    margin-top: 4vw;
+    width: 80vw;
+  }
+
+  .Card img 
+  {
+    height: 70%;
+    width:90%;
+  }
+
+  .contact-contain
+  {
+    width: 20rem;
+    height: 40rem;
+  }
+  
+  .Footer li 
+  {
+    font-size: 1rem;
   }
 }
+
